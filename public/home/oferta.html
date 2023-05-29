@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="logoAndNav">
+            <a href="main.html"><nav class="logo"></nav></a>
+            <nav class="nav">
+                <ul id="navMenu">
+                    <li><a href="main.html">O nas</a></li>
+                    <li><a href="oferta.html">Oferta</a></li>
+                    <li><a href="main.html">Opinie</a></li>
+                    <li><a href="main.html">Kontakt</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+            <i class="fa-solid fa-bars" id="hamburger"></i>
+        </nav>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <header class="slider swiper-slide img1">
+                    <h1 class="h1Header">Chcesz się dowiedzieć więcej o nas?</h1>
+                    <a href="main.html"><button class="buttonHeader">Kliknij tutaj!</button></a>
+                </header>
+                <header class="slider swiper-slide img2">
+                    <h1 class="h1Header">Kliknij, aby zobaczyć nasze opinie!</h1>
+                    <a href="main.html"><button class="buttonHeader">Kliknij tutaj!</button></a>
+                </header>
+                <header class="slider swiper-slide img3">
+                    <h1 class="h1Header">Masz pytania? Napisz do nas!</h1>
+                    <a href="main.html"><button class="buttonHeader">Kliknij tutaj!</button></a>
+                </header>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <h1 class="headerBeforeSection">Oferta</h1>
+        
+        <section class="offer sectionColor">
+            <div class="switchPrice">
+                <select name="priceSwitch" id="priceSwitch">
+                    <option value="PLN">PLN</option>
+                    <option value="USD">USD</option>
+                    <option value="GBP">GBP</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+            <div class="card">
+                <img src="img/paleta80x120.png" alt="paleta 80x120">
+                <h2 class="h2Card">Miejsce paletowe(paleta 80x120)</h2>
+                <p class="price"><span class="productPrice" data-price="120">120</span>/miesiąc</p>
+                <button class="buttonCard">Dodaj do koszyka</button>
+            </div>
+            <div class="card">
+                <img src="img/paleta100x120.png" alt="paleta 100x120">
+                <h2 class="h2Card">Miejsce paletowe(paleta 100x120)</h2>
+                <p class="price"><span class="productPrice" data-price="180">180</span>/miesiąc</p>
+                <button class="buttonCard">Dodaj do koszyka</button>
+            </div>
+            <div class="card">
+                <img src="img/niestandardowa.png" alt="paleta niestandardowa">
+                <h2 class="h2Card">Miejsce paletowe(paleta niestandardowa)</h2>
+                <p class="price"><span class="productPrice" data-price="150">150</span>/miesiąc</p>
+                <button class="buttonCard">Dodaj do koszyka</button>
+            </div>
+            <div class="card">
+                <img src="img/dostawy.jpg" alt="osbługa dostaw">
+                <h2 class="h2Card">Obsługa dostaw</h2>
+                <p class="price"><span class="productPrice" data-price="300">300</span>/miesiąc</p>
+                <button class="buttonCard">Dodaj do koszyka</button>
+            </div>
+            <div class="card">
+                <img src="img/etykietowanie.jpg" alt="etykietowanie towarów">
+                <h2 class="h2Card">Etykietowanie towarów</h2>
+                <p class="price"><span class="productPrice" data-price="5">5</span>/sztukę</p>
+                <button class="buttonCard" >Dodaj do koszyka</button>
+            </div>
+            <div class="card">
+                <img src="img/kompletacja.jpg" alt="Kompletowanie towarów">
+                <h2 class="h2Card">Kompletowanie zamówień</h2>
+                <p class="price"><span class="productPrice" data-price="500">500</span>/miesiąc</p>
+                <button class="buttonCard">Dodaj do koszyka</button>
+            </div>
+            <div class="card">
+                <img src="img/kontrolaJakosci.jpg" alt="kontrola jakości">
+                <h2 class="h2Card">Kontrola jakości</h2>
+                <p class="price"><span class="productPrice" data-price="1000">1000</span>/miesiąc</p>
+                <button class="buttonCard">Dodaj do koszyka</button>
+            </div>
+            <div class="card">
+                <img src="img/ubezpieczenie.jpg" alt="ubezpiecznie towarów">
+                <h2 class="h2Card">Ubezpiecznie towarów</h2>
+                <p class="price"><span class="productPrice" data-price="100">100</span>/paletę</p>
+                <button class="buttonCard">Dodaj do koszyka</button>
+            </div>
+            <div class="card">
+                <img src="img/zwroty.jpg" alt="osbługa zwrotów">
+                <h2 class="h2Card">Obsługa zwrotów</h2>
+                <p class="price"><span class="productPrice" data-price="300">300</span>/miesiąc</p>
+                <button class="buttonCard">Dodaj do koszyka</button>
+            </div>
+            <div class="card">
+                <img src="img/dystrybucja.jpg" alt="usługi dystrybucyjne">
+                <h2 class="h2Card">Usługi dystrybucyjne</h2>
+                <p class="price"><span class="productPrice" data-price="400">400</span>/miesiąc</p>
+                <button class="buttonCard">Dodaj do koszyka</button>
+            </div>
+            <div class="card">
+                <img src="img/monitorowanie.jpg" alt="monitorowanie stanu zapasów magazynowych">
+                <h2 class="h2Card">Monitorowanie stanu zapasów magazynowych</h2>
+                <p class="price"><span class="productPrice" data-price="500">500</span>/miesiąc</p>
+                <button class="buttonCard">Dodaj do koszyka</button>
+            </div>
+            <div class="card">
+                <img src="img/logistyka.jpg" alt="usługi logistyczne">
+                <h2 class="h2Card">Usługi logistyczne</h2>
+                <p class="price"><span class="productPrice" data-price="250">250</span>/miesiąc</p>
+                <button class="buttonCard">Dodaj do koszyka</button>
+            </div>
+        </section>
+        <footer class="footer">Wszelkie prawa zastrzeżone &copy 2023 Maciej Opielowski</footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper2.js"></script>
+    <script src="js/swiper1.js"></script>
+    <script src="js/api.js"></script>
+</body>
+</html>

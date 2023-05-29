@@ -1,0 +1,692 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #FFF6E6;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+nav.logoAndNav{
+    height: 10vh;
+    flex-basis: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: #FFF6E6;
+}
+
+nav.logo{
+    background-image: url(img/img1_przyciete.png);
+    background-position: center;
+    background-size: cover;
+    width: 7vh;
+    height: 7vh;
+}
+.nav{
+    position: relative;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    display: flex;
+    padding: 20px 30px;
+    transition: .3s;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.nav ul li.nav-item a{
+    background-color: blue;
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+} 
+
+.nav ul li.nav-item2 a{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+} 
+
+.nav-item form button{
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+
+.nav li a::after{
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s;
+    transform: translateX(-100%);
+}
+
+.nav ul li a:hover::after{
+    transform: translateX(0);
+}
+
+.logoAndNav i{
+    font-size: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.nav i{
+    display: block;
+    font-size: 30px;
+}
+
+
+.slider{
+    flex-basis: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-top: 10vh;
+}
+
+.img1{
+    background-image: url(img/zdjecie_magazyn.jpg);
+}
+
+.img2{
+    background-image: url(img/zdjecie_magazyn2.jpg);
+}
+
+.img3{
+    background-image: url(img/zdjecie_\,magazyn3.jpg);
+}
+.swiper {
+    width: 100%;
+    height: 60vh;
+  }
+.h1Header{
+    padding: 30px 40px;
+    background-color: #B4E1C6;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    font-size: 2.5rem;
+    top: 20%;
+    left: 10%;
+}
+
+
+
+.buttonHeader{
+    padding: 20px 30px;
+    background-color: #D4E3C5;
+    color: black;
+    position: absolute;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    top: 50%;
+    left: 20%;
+    transition: .3s;
+}
+
+.buttonHeader:hover{
+    background-color: #d4ffff;
+}
+
+.sectionColor{
+    background-color: #E0D8B4;
+    width: 80vw;
+    min-height: 300px;
+    flex-basis: 100%;
+    text-align: justify;
+    hyphens: auto;
+    font-size: 1.9rem;
+    padding: 100px;
+    margin: 0 auto;
+}
+
+.pAbout{
+    line-height: 150%;
+}
+
+.headerBeforeSection{
+    padding: 20px;
+    width: 100%;
+    background-color: #E0D8B4;
+    font-size: 3rem;
+    text-align: center;
+    box-shadow: 0 0 10px 2px black;
+    z-index: 2;
+}
+
+.about h1{
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.switchPrice{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.switchPrice select{
+    padding: 20px 50px;
+    font-size: 1.5rem;
+}
+
+.offer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+div.card{
+    flex-basis: 24%;
+    height: 600px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px 2px #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card img{
+    width: 50%;
+    margin: 30px auto;
+    margin-top: 20%;
+}
+
+.card .h2Card{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.price{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.offerForm{
+    width: 100%;
+    text-align: center;
+}
+
+.offerForm .row div:nth-child(1) input{
+    padding: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+
+.buttonCard{
+    padding: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: inline-block;
+    border: none;
+    background-color: #D4E3C5;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+
+.opinie{
+    display: flex;
+    justify-content: space-between;
+}
+
+.opinie .opinion{
+    flex-basis: 25%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 50px 2px #ddd;
+    border-radius: 20px;
+}
+
+.opinion img{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.opinion h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.opinion p{
+    font-size: 1.5rem;
+    text-align: justify;
+    hyphens: auto;
+    line-height: 130%;
+    font-style: italic;
+}
+.mySwiper{
+    width: 95vw;
+    background-color: transparent;
+    min-height: 300px;
+    flex-basis: 100%;
+    padding: 100px;
+    margin: 0 auto;
+    hyphens: auto;
+}
+
+.contact{
+    display: flex;
+}
+
+.address{
+    flex-basis: 50%;
+    padding-left: 50px;
+}
+
+.address ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.address ul li{
+    width: 94%;
+    margin: 10px 0;
+    margin-left: 3%;
+}
+
+.address ul i{
+    width: 3%;
+    margin: 10px 0;
+}
+
+.form{
+    flex-grow: 1;
+}
+.form h2{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form form input{
+    margin-bottom: 30px;
+    padding: 30px;
+    font-size: 1.5rem;
+}
+
+.form textarea{
+    font-size: 1.5rem;
+}
+
+.form button{
+    padding: 20px 30px;
+    background-color: #D4E3C5;
+    color: black;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .3s;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.form button{
+    background-color: #d4ffff;
+}
+
+.footer{
+    font-size: 30px;
+    text-align: center;
+    height: 5vh;
+    line-height: 5vh;
+    background-color: black;
+    color: white;
+}
+
+.cart{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    margin: auto 0;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.titleAndPrice{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.titleAndPrice p{
+    margin-bottom: 20px;
+}
+
+
+.buttonCart{
+    padding: 10px;
+    height: 10%;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    margin: auto auto;
+    cursor: pointer;
+    align-self: flex-end;
+    text-decoration: none;
+}
+.totalPrice{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.order{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.order h2{
+    margin-bottom: 30px;
+}
+
+.orderButton{
+    padding: 10px;
+    height: 10%;
+    font-size: 30px;
+    background-color: green;
+    color: white;
+    margin: auto auto;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+@media(max-width:1750px){
+    .opinie .opinion{
+        flex-basis: 33%;
+    }
+    .contact{
+        padding: 50px;
+    }
+    
+    div.card{
+        flex-basis: 30%;
+    }
+    
+    .card img{
+        width: 70%;
+    }
+    
+    .card .h2Card{
+        font-size: 1.5rem;
+    }
+    .price{
+        font-size: 1.4rem;
+    }
+    
+    .buttonCard{
+        font-size: 1.3rem;
+    }
+    .nav ul{
+        gap: 2.5rem;
+    }
+}
+
+@media(max-width: 1400px){
+    .cart{
+        width: 100%;
+    }
+}
+
+@media(max-width:1350px){
+    .opinie .opinion{
+        flex-basis: 50%;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .address{
+        margin-bottom: 50px;
+    }
+    .nav ul{
+        gap: 1.5rem;
+    }
+}
+
+@media(max-width: 1250px){
+    
+    div.card{
+        flex-basis: 45%;
+    }
+    .nav ul li a{
+        padding: 10px 20px;
+    }
+    .nav ul{
+        gap: .5rem;
+    }
+    .cart{
+        flex-direction: column;
+    }
+    .image{
+        margin: auto auto
+    }
+    .titleAndPrice{
+        text-align: center;
+    }
+}
+
+@media(max-width: 1024px){
+    .nav{
+        width: 100vw;
+    }
+    .nav ul{
+        flex-direction: column;
+        position: fixed;
+        z-index: 3;
+        right: 0;
+        top: 10vh;
+        width: 100vw;
+        background-color: #D4E3C5;
+        transform: translate(100%);
+        transition: .3s;
+    }
+
+    .nav ul.active{
+        transform: translate(0%);
+    }
+    .nav ul li a{
+        line-height: 7vh;
+        height: 10vh;
+        letter-spacing: 2px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav ul li a:hover{
+        background-color: #eee;
+    }
+    .logoAndNav i{
+        display: block;
+    }
+    .nav i{
+        display: block;
+        line-height: 5vh;
+    }
+    
+    .h1Header{
+        padding: 20px 20px;
+        font-size: 2rem;
+        left: 5%;
+    }
+    
+    .buttonHeader{
+        font-size: 1.2rem;
+        left: 30%;
+    }
+
+    .sectionColor{
+        font-size: 1.7rem;
+        padding: 50px;
+    }
+    .opinie .opinion{
+        flex-basis: 100%;
+    }
+    .sectionColor{
+        width: 100vw;
+    }
+    
+    .form form{
+        width: 80%;
+    }
+    .footer{
+        font-size: 15px;
+    }
+    
+}
+
+@media(max-width: 640px){
+    #hamburger{
+        font-size: 30px;
+    }
+    .nav ul{
+        top: 10vh;
+    }
+
+    .h1Header{
+        font-size: 1.5rem;
+    }
+
+    .sectionColor{
+        font-size: 1.5rem;
+        padding: 50px;
+    }
+
+    .opinie .opinion{
+        padding: 20px;  
+        box-shadow: none; 
+        min-height: 430px;     
+    }
+    
+    .opinion img{
+        width: 50%;
+    }
+    
+    .opinion h2{
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+    .opinie .opinion{
+        flex-basis: 130%;
+    }
+    
+    .opinion p{
+        font-size: .8rem;
+        text-align: center;
+        line-height: 120%;
+    }
+    .form form input{
+        padding: 20px;
+        font-size: 1rem;
+    }
+    
+    .form textarea{
+        font-size: 1rem;
+    }
+    div.card{
+        flex-basis: 100%;
+    }
+    .card img{
+        width: 50%;
+    }
+ 
+    .switchPrice select{
+        font-size: 1rem;
+    }
+
+
+@media (max-width: 390px){
+    .h1Header{
+        font-size: 1rem;
+    }
+    .headerBeforeSection{
+        font-size: 2rem;
+    }
+    .sectionColor{
+        font-size: 1.3rem;
+        padding: 20px;
+    }
+    .buttonHeader{
+        padding: 10px 20px;
+        font-size: .8rem;
+    }
+    .opinion h2{
+        font-size: 1rem;
+    }
+    .opinie .opinion{
+        flex-basis: 150%;
+    }
+    
+}
+}
